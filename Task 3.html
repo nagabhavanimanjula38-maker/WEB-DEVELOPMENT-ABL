@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Wanderway Travel</title>
+  <style>
+    body { font: 16px Arial; margin: 0; padding: 20px; background: #f3f6fa; color: #203047; }
+    header, .card { padding: 20px; margin-bottom: 16px; border-radius: 12px; background: white; }
+    header { color: white; background: #183e62; }
+    form { display: grid; gap: 10px; }
+    input, select, button { padding: 11px; border: 1px solid #ccd5df; border-radius: 7px; }
+    button { background: #f28b42; color: white; border: 0; cursor: pointer; }
+    @media (min-width: 600px) { form { grid-template-columns: repeat(2, 1fr); } }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>✈ Wanderway Travel</h1>
+    <p>Book your next trip in India</p>
+  </header>
+
+  <section class="card">
+    <h2>Find a trip</h2>
+    <form>
+      <input placeholder="From (e.g. Chennai)" required>
+      <input placeholder="To (e.g. Bengaluru)" required>
+      <input type="date" required>
+      <select><option>1 passenger</option><option>2 passengers</option><option>3 passengers</option></select>
+      <button type="button">Search trips</button>
+    </form>
+  </section>
+
+  <section class="card">
+    <h2>Available travel</h2>
+    <h3>🚆 Train</h3>
+    <p>Express Train · 9:00 AM · Sleeper fare: ₹450</p>
+    <button onclick="alert('Train selected!')">Book Train</button>
+
+    <h3>🚌 Bus</h3>
+    <p>AC Seater Bus · 10:30 AM · Fare: ₹650</p>
+    <button onclick="alert('Bus selected!')">Book Bus</button>
+  </section>
+</body>
+</html>
