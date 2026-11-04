@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Campus Fest 2026</title>
+  <style>
+    * { box-sizing: border-box; }
+    body { margin: 0; font: 16px Arial, sans-serif; background: #f5f3fa; color: #29243b; }
+    header { padding: 16px 8%; background: #38246b; color: white; }
+    nav { display: flex; gap: 18px; flex-wrap: wrap; margin-top: 12px; }
+    nav a { color: white; text-decoration: none; }
+    nav a:hover { color: #ffd166; }
+    .banner { padding: 55px 8%; color: white; background: linear-gradient(90deg, #38246be8, #38246b55), url("https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=1400") center/cover; }
+    .banner h1 { font-size: clamp(36px, 7vw, 64px); margin: 0 0 10px; }
+    main { width: min(1000px, 90%); margin: auto; }
+    section { padding: 28px 0; }
+    .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px; }
+    .card { padding: 19px; border-radius: 14px; background: white; box-shadow: 0 5px 16px #0001; }
+    .card h3 { color: #5b3ca0; margin-top: 0; }
+    table { width: 100%; border-collapse: collapse; background: white; }
+    th, td { padding: 12px; border-bottom: 1px solid #eee; text-align: left; }
+    input, select, button { width: 100%; padding: 11px; margin: 6px 0 12px; border: 1px solid #ccc; border-radius: 7px; }
+    button { border: 0; background: #ef6c45; color: white; font-weight: bold; cursor: pointer; }
+    footer { padding: 20px; text-align: center; background: #38246b; color: white; }
+    @media (max-width: 600px) { th, td { padding: 8px 5px; font-size: 13px; } }
+  </style>
+</head>
+<body>
+  <header>
+    <strong>🎉 CAMPUS FEST 2026</strong>
+    <nav>
+      <a href="#events">Events</a><a href="#schedule">Schedule</a>
+      <a href="#rules">Rules</a><a href="#register">Register</a>
+    </nav>
+  </header>
+
+  <section class="banner">
+    <h1>One Campus.<br>Infinite Moments.</h1>
+    <p>Join us March 20–22 for three days of ideas, music, and fun!</p>
+  </section>
+
+  <main>
+    <section id="events">
+      <h2>Explore events</h2>
+      <div class="cards">
+        <article class="card"><h3>💻 Technical</h3><p>Hackathon, coding challenge, robotics, and project showcase.</p><p>Coordinator: Arjun · 98765 43210</p></article>
+        <article class="card"><h3>🎭 Cultural</h3><p>Dance, singing, drama, fashion show, and Battle of the Bands.</p><p>Coordinator: Priya · 98765 43211</p></article>
+        <article class="card"><h3>🛠 Workshops</h3><p>AI basics, photography, design thinking, and 3D printing.</p><p>Coordinator: Sam · 98765 43212</p></article>
+      </div>
+    </section>
+
+    <section id="schedule">
+      <h2>Event schedule</h2>
+      <table>
+        <tr><th>Day</th><th>Time</th><th>Event</th><th>Venue</th></tr>
+        <tr><td>March 20</td><td>10:00 AM</td><td>Opening & Hackathon</td><td>Main Hall</td></tr>
+        <tr><td>March 21</td><td>11:00 AM</td><td>Workshops & Robotics</td><td>Labs</td></tr>
+        <tr><td>March 22</td><td>5:00 PM</td><td>Cultural Night</td><td>Open Air Stage</td></tr>
+      </table>
+    </section>
+
+    <section id="rules">
+      <h2>Festival rules</h2>
+      <div class="card">
+        <p>• Bring your college ID for check-in.</p>
+        <p>• Register before the event begins.</p>
+        <p>• Follow coordinator instructions and respect all participants.</p>
+      </div>
+    </section>
+
+    <section id="register">
+      <h2>Register for an event</h2>
+      <form class="card" onsubmit="event.preventDefault(); alert('Registration submitted!');">
+        <label>Name<input required placeholder="Your name"></label>
+        <label>Email<input type="email" required placeholder="you@example.com"></label>
+        <label>Choose event
+          <select required>
+            <option value="">Select an event</option>
+            <option>Hackathon</option><option>Dance Competition</option>
+            <option>AI Workshop</option><option>Robotics Challenge</option>
+          </select>
+        </label>
+        <button type="submit">Submit registration</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>Questions? festival@example.edu · © Campus Fest 2026</footer>
+</body>
+</html>
